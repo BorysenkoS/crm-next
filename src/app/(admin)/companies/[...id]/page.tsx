@@ -1,13 +1,16 @@
 import Header from '@/app/components/header';
 
 type PageProps = {
-  params: { id: string[] };
+  params: Promise<{ id?: string[] }>;
 };
 
-export default function Page({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
+  const resolvedParams = await params;
+  const id = resolvedParams.id ? resolvedParams.id.join(', ') : 'All';
+
   return (
     <>
-      <Header>Companies ({String(params.id)})</Header>
+      <Header>Companies ({id})</Header>
       <p>{new Date().toTimeString()}</p>
     </>
   );
