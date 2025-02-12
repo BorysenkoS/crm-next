@@ -4,7 +4,8 @@ import React from 'react';
 export default function Page() {
   return (
     <>
-      <Header>Dashboard</Header>
+      <Header>Dashboard / New Companies</Header>
+      <div>Some additional info</div>
     </>
   );
 }
