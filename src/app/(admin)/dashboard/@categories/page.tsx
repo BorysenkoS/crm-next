@@ -1,8 +1,8 @@
 import React from 'react';
 import StatCard, { StatCardType } from '@/app/components/stat-card';
 import DashboardCard from '@/app/components/dashboard-card';
-import getCountById from '@/app/lib/utils/getCountById';
-import { getCategories, getCompanies } from '@/app/lib/api';
+import getCountById from '@/lib/utils/getCountById';
+import { getCategories, getCompanies } from '@/lib/api';
 
 export default async function Page() {
   const categories = await getCategories();

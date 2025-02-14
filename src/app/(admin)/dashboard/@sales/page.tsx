@@ -2,7 +2,7 @@ import DashboardCard from '@/app/components/dashboard-card';
 import SummaryTable from '@/app/components/summary-table';
 import SummaryTableCell from '@/app/components/summary-table-cell';
 import SummaryTableHeader from '@/app/components/summary-table-header';
-import { getSummarySales } from '@/app/lib/api';
+import { getSummarySales } from '@/lib/api';
 import React from 'react';
 
 export default async function Page() {

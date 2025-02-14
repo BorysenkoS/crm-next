@@ -3,7 +3,7 @@ import SummaryTable from '@/app/components/summary-table';
 import SummaryTableHeader from '@/app/components/summary-table-header';
 import SummaryTableCell from '@/app/components/summary-table-cell';
 import DashboardCard from '@/app/components/dashboard-card';
-import { getPromotions } from '@/app/lib/api';
+import { getPromotions } from '@/lib/api';
 
 export default async function Page() {
   const data = await getPromotions();

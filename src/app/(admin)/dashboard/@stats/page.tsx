@@ -1,7 +1,7 @@
 import React from 'react';
 
 import StatCard, { StatCardType } from '@/app/components/stat-card';
-import { getSummaryStats, SummaryStats } from '@/app/lib/api';
+import { getSummaryStats, SummaryStats } from '@/lib/api';
 
 const labelByStat: Record<keyof SummaryStats, string> = {
   promotions: 'Total promotions',
